@@ -32,6 +32,13 @@ body,
     background-size: cover;
 }
 
+.conteudo{
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
 .flex-center {
     color: #fff;
 }

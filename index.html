@@ -25,19 +25,19 @@
                     <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav1" aria-controls="navbarNav1" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
-                    <a class="navbar-brand" href="#">
+                    <a class="navbar-brand" href="#home">
                         <img src="img/ipub_nome.png" style="height: 2rem;">
                     </a>
                     <div class="collapse navbar-collapse" id="navbarNav1">
                         <ul class="navbar-nav mr-auto">
-                            <li class="nav-item active">
-                                <a class="nav-link yellow-text" href="#home"><strong>HOME</strong> <span class="sr-only">(current)</span></a>
+                            <li class="nav-item">
+                                <a class="nav-link yellow-text" href="#home"><strong>HOME</strong></a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link yellow-text" href="#sobre"><strong>QUEM SOMOS</strong></a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link yellow-text"><strong>RESTAURANTES</strong></a>
+                                <a class="nav-link yellow-text" href="#servicos"><strong>SERVIÇOS</strong></a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link yellow-text"><strong>CONTATO</strong></a>
@@ -70,20 +70,22 @@
                     </li>
                     <li>
                         <a target="_blank" href="#" class="btn btn-primary btn-lg animated rotateInDownLeft">Entrar</a>
-                        <a target="_blank" href="#" class="btn btn-default btn-lg animated rotateInDownLeft">Baixe nosso app</a>
+                        <a target="_blank" href="https://play.google.com/store/apps?hl=pt_BR" class="btn btn-default btn-lg animated rotateInDownLeft">Baixe nosso app</a>
                     </li>
                 </ul>                
             </div>
             <!--/Intro content-->
         </div>
-        
+        <div id="sobre"></div><br><br>
         <div class="container">
-            <div class="divider-new wow rotateInDownLeft">
+            
+            <!-- Sessão sobre -->                       
+            <div class="divider-new wow rotateInDownLeft">                    
                 <h2 class="h2-responsive">Quem somos</h2>
             </div>
-            
-            <section id="sobre" class="animated slideInUp">                
-                <p class="">Nossa empresa visa proporcionar o melhor serviço de busca, para quem procura algum lugar para se divertir na região. Oferecemos o melhor em bares e restaurantes para quem quer uma noite diferenciada com sua companhia, ou para quem curte aquela cachaça no fim do espediente.</p>
+
+            <section  class="animated slideInUp">                
+                <p>Nossa empresa visa proporcionar o melhor serviço de busca, para quem procura algum lugar para se divertir na região. Oferecemos o melhor em bares e restaurantes para quem quer uma noite diferenciada com sua companhia, ou para quem curte aquela cachaça no fim do espediente.</p><br>                    
                 <div class="row">
                     <div class="col-md-4">
                         <div class="card wow fadeInDown" data-wow-delay="0.2s">
@@ -108,13 +110,45 @@
                             <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20%282%29.jpg" alt="Card image cap">
                             <div class="card-block">
                                 <h4 class="card-title text-center">Descrição</h4>
-                                <p class="card-text text-center">Texto da descrição</p>
+                                <p class="card-text text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
-        </div>
+            
+            <div id="servicos"></div><br>
+            <!-- Sessão serviços -->        
+            <div class="divider-new wow rotateInDownLeft">
+                <h2 class="h2-responsive">Serviços</h2>
+            </div>
+
+            <section  class="animated slideInUp">
+                <p class="text-center">Venha fazer parte da família IPUB!</p>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="card">
+                            <img class="img-fluid" src="http://talabistro.com/wp-content/uploads/t_gn4.jpg" alt="Card image cap">
+                            <div class="card-block">
+                                <h4 class="card-title">Clientes</h4>
+                                <p class="card-text">Você pode criar uma conta no nosso aplicativo e interagir com os estabelecimentos!</p>
+                                <a  class="btn btn-primary">Cadastra-se</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card">
+                            <img class="img-fluid" src="http://www.publicdomainpictures.net/pictures/160000/velka/homme-daffaires-ordinateur-pc.jpg" alt="Card image cap">
+                            <div class="card-block">
+                                <h4 class="card-title">Empresários</h4>
+                                <p class="card-text">Você empresário, pode cadastrar seu estabelecimento e usufruir dos nossos beneficios!</p>
+                                <a  class="btn btn-primary">Cadastra-se</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>                
         
         <!-- /Start your project here-->
 
