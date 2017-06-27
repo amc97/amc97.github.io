@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>IPUB</title>
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
+        <!-- Bootstrap core CSS -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <!-- Material Design Bootstrap -->
+        <link href="css/mdb.min.css" rel="stylesheet">
+        <!-- Your custom styles (optional) -->
+        <link href="css/style.css" rel="stylesheet">
+        
+        <script src="js/mapaAutocomplete.js"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB5Vg33D-LxgmpLB2UFGvce8Vp0SSsekoY&libraries=places&callback=initMap"
+        async defer></script>
+        
+    </head>
+
+    <body>
+
+        <!-- Start your project here-->
+        <header>
+            <nav class="navbar navbar-toggleable-md navbar-dark elegant-color-dark fixed-top">
+                <div class="container">
+                    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav1" aria-controls="navbarNav1" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <a class="navbar-brand" href="#home">
+                        <img src="img/ipub_nome.png" style="height: 2rem;">
+                    </a>
+                    <div class="collapse navbar-collapse" id="navbarNav1">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item">
+                                <a class="nav-link yellow-text" href="index.html#home"><strong>HOME</strong></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link yellow-text" href="index.html#sobre"><strong>QUEM SOMOS</strong></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link yellow-text" href="index.html#servicos"><strong>SERVIÇOS</strong></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link yellow-text" href="index.html#contato"><strong>CONTATO</strong></a>
+                            </li>
+                        </ul>
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item">
+                                <a class="nav-link waves-effect waves-light"><i class="fa fa-twitter fa-lg yellow-text"></i></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link waves-effect waves-light"><i class="fa fa-facebook fa-lg yellow-text"></i></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link waves-effect waves-light"><i class="fa fa-instagram fa-lg yellow-text"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>                
+        <!-- Sessão contato -->
+        <div class="container">
+            <br>
+            <div class="divider-new wow rotateInDownLeft">
+                <h2 class="h2-responsive">Cadastre seu estabelecimento</h2>
+            </div>
+            <section>
+                <div class="row">                    
+                    <div class="col-md-6">                        
+                        <div class="card wow fadeInDown" data-wow-delay="0.2s">                            
+                            <div class="card-block">                                                                            
+                                <br>
+
+                                <div class="md-form">                                    
+                                    <input type="text" id="nome" class="form-control">
+                                    <label for="nome">Nome do estabelecimento</label>
+                                </div>
+
+                                <div class="md-form">                                    
+                                    <input type="text" id="email" class="form-control">
+                                    <label for="email">Email</label>
+                                </div>
+
+                                <div class="md-form">                                    
+                                    <input type="text" id="cnpj" class="form-control">
+                                    <label for="cnpj">CNPJ</label>
+                                </div>
+
+                                <div class="md-form">                                    
+                                    <input type="password" id="senha" class="form-control">
+                                    <label for="senha">Senha</label>
+                                </div>                            
+
+                                <div class="md-form">                                    
+                                    <input type="password" id="senhaC" class="form-control">
+                                    <label for="senhaC">Confirmação de senha</label>
+                                </div>                                                                           
+                                                               
+                            </div>
+                        </div>                        
+                    </div>
+                    <div class="col-md-6">                        
+                        <div class="card wow fadeInDown" data-wow-delay="0.2s">                            
+                            <div class="card-block">                                                                            
+                                <br>
+
+                                <div class="md-form">                                    
+                                    <input type="text" id="route" class="form-control">
+                                    <label for="route">Rua</label>
+                                </div>
+
+                                 <div class="md-form">                                    
+                                    <input type="text" id="street_number" class="form-control">
+                                    <label for="street_number">Número</label>
+                                </div> 
+
+                                <div class="md-form">                                    
+                                    <input type="text" id="locality" class="form-control">
+                                    <label for="locality">Cidade</label>
+                                </div>                                                              
+
+                                <div class="md-form">                                    
+                                    <input type="text" id="administrative_area_level_1" class="form-control">
+                                    <label for="administrative_area_level_1">Estado</label>
+                                </div> 
+
+                                 <div class="md-form">                                    
+                                    <input type="text" id="numero" class="form-control">
+                                    <label for="numero">Telefone</label>
+                                </div>                                                                                                        
+                            </div>
+                        </div>                        
+                    </div>
+                </div>
+                <br><br>
+                <div class="row">
+                    <div class="col-md-1"></div>
+                    <div class="col-md-10">
+                        <div class="card">                            
+                            <input id="autocomplete" onfocus="geolocate()" type="text">                                                          
+                            <div id="map" style="height: 300px;"></div>
+                        </div>                        
+                    </div>
+                    <div class="col-md-1"></div>
+                </div>
+            </section>
+                <div class="text-center">
+                    <button class="btn btn-primary">Cadastrar</button>                                    
+                </div>                
+        <br><br>
+        </div>
+        <!--Footer-->
+        <footer class="page-footer elegant-color-dark center-on-small-only">
+            <!--Footer Links-->                           
+            <div class="footer-copyright">
+                <div class="container-fluid yellow-text">
+                    © 2017 Copyright: <a> AMC Creations </a>
+                </div>
+            </div>            
+            <!--/.Copyright-->
+
+        </footer>
+        <!--/.Footer-->
+        <!-- /Start your project here-->
+
+        <!-- SCRIPTS -->
+        <!-- JQuery -->
+        <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+        <!-- Bootstrap tooltips -->
+        <script type="text/javascript" src="js/tether.min.js"></script>
+        <!-- Bootstrap core JavaScript -->
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <!-- MDB core JavaScript -->
+        <script type="text/javascript" src="js/mdb.min.js"></script>
+
+        <script>
+            new WOW().init();
+        </script>
+    </body>
+
+</html>
