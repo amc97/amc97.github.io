@@ -13,7 +13,9 @@
         <!-- Material Design Bootstrap -->
         <link href="css/mdb.min.css" rel="stylesheet">
         <!-- Your custom styles (optional) -->
-        <link href="css/style.css" rel="stylesheet">    
+        <link href="css/style.css" rel="stylesheet">
+        <!-- Firebase -->
+        <script src="https://www.gstatic.com/firebasejs/4.1.3/firebase.js"></script>
     </head>
 
     <body>
@@ -70,34 +72,29 @@
                     <div class="col-md-6">                        
                         <div class="card wow fadeInDown" data-wow-delay="0.2s">                            
                             <div class="card-block">                                                                            
-                                <br>                                
-                                <div class="md-form">
-                                    <i class="fa fa-user prefix"></i>
-                                    <input type="text" id="form3" class="form-control">
-                                    <label for="form3">Nome</label>
-                                </div>
-
+                                <br>                                                                    
                                 <div class="md-form">
                                     <i class="fa fa-envelope prefix"></i>
-                                    <input type="text" id="form2" class="form-control">
-                                    <label for="form2">Email</label>
+                                    <input type="text" id="email" class="form-control">
+                                    <label for="email">Email</label>
                                 </div>
 
                                 <div class="md-form">
                                     <i class="fa fa-lock prefix"></i>
-                                    <input type="password" id="form32" class="form-control">
-                                    <label for="form34">Senha</label>
+                                    <input type="password" id="senha" class="form-control">
+                                    <label for="senha">Senha</label>
                                 </div>                            
-                                
+
                                 <div class="md-form">
                                     <i class="fa fa-lock prefix"></i>
-                                    <input type="password" id="form32" class="form-control">
-                                    <label for="form34">Confirmação de senha</label>
+                                    <input type="password" id="senhaC" class="form-control">
+                                    <label for="senhaC">Confirmação de senha</label>
                                 </div>                            
-                                
+
                                 <div class="text-center">
-                                    <button class="btn btn-primary">Criar conta</button>                                    
-                                </div>
+                                    <button id="btnSignUp" class="btn btn-unique">Criar conta</button>
+                                    <button id="btnLogout" class="btn btn-unique">Sair</button>
+                                </div>                                                               
                             </div>
                         </div>                        
                     </div>
@@ -128,6 +125,8 @@
         <!--/.Footer-->
         <!-- /Start your project here-->
 
+        <!-- Firebase -->        
+        <script src="js/firebase.js"></script>        
         <!-- SCRIPTS -->
         <!-- JQuery -->
         <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
@@ -141,6 +140,7 @@
         <script>
             new WOW().init();
         </script>
+                       
     </body>
 
 </html>
