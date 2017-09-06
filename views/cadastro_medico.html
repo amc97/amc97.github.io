@@ -1,0 +1,121 @@
+<div class="container" style="padding: 2%">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card">
+                <div class="card-header bg-dark">
+                    <h3 class="text-light">Médico</h3>
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <input type="text" name="crm" id="form41" class="form-control" placeholder="CRM" ng-model="med.crm">
+                            </div>
+                        </div>
+                        <div class="col-md-8">
+                            <div class="form-group">
+                                <input type="text" name="especialidade" id="form51" class="form-control" placeholder="Especialidade" ng-model="med.especialidade">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <input type="text" name="nome" id="form41" class="form-control" placeholder="Nome" ng-model="med.nome">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <input type="text" name="cpf" id="form41" class="form-control" placeholder="CPF" ng-model="med.cpf">
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <input type="text" name="rg" id="form51" class="form-control" placeholder="RG" ng-model="med.rg">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <input type="text" name="endereco" id="form41" class="form-control" placeholder="Endereço" ng-model="med.endereco">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-2">
+                            <div class="form-group">
+                                <input type="text" name="num" id="form51" class="form-control" placeholder="N°" ng-model="med.num">
+                            </div>
+                        </div>
+                        <div class="col-md-5">
+                            <div class="form-group">
+                                <input type="text" name="bairro" id="form51" class="form-control" placeholder="Bairro" ng-model="med.bairro">
+                            </div>
+                        </div>
+                        <div class="col-md-5">
+                            <div class="form-group">
+                                <input type="text" name="cidade" id="form51" class="form-control" placeholder="Cidade" ng-model="med.cidade">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <input type="text" name="tel" id="form41" class="form-control" placeholder="Telefone" ng-model="med.tel">
+                            </div>
+                        </div>
+                        <div class="col-md-8">
+                            <div class="form-group">
+                                <input type="text" name="email" id="form51" class="form-control" placeholder="Email" ng-model="med.email">
+                            </div>
+                        </div>
+                    </div>
+
+                    <h5 class="text-center">Permissões</h5>
+                    <hr>
+                    <div class="row justify-content-center">
+                        <div class="col-md-4 text-center">
+                            <div class="checkbox">
+                                <label>
+                                            <input type="checkbox">
+                                            Gerenciar médico
+                                        </label>
+                            </div>
+                        </div>
+                        <div class="col-md-4 text-center">
+                            <div class="checkbox">
+                                <label>
+                                            <input type="checkbox">
+                                            Gerenciar plantão
+                                        </label>
+                            </div>
+                        </div>
+                        <div class="col-md-4 text-center">
+                            <div class="checkbox">
+                                <label>
+                                            <input type="checkbox">
+                                            Trocar plantão
+                                        </label>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+
+                    <div class="row justify-content-center">
+                        <div class="col-md-4 text-center">
+                            <button class="btn btn-dark btn-lg text-light" ng-click="addMedico(med)">Cadastrar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
