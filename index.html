@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt" ng-app="appPlantao">
 
-<head>
+  <head>
 
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,7 +9,7 @@
 
     <meta name="description" content="">
     <meta name="author" content="">
-    <title>Gerenciador de Plantões - Dashboard</title>
+    <title>Gerenciador de Plantões - Login</title>
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -19,84 +19,54 @@
 
     <!-- Custom styles for this template -->
     <link href="css/sb-admin.css" rel="stylesheet">
-    
+      
     <!-- AngularJS -->
     <script type="text/javascript" src="vendor/angular/angular.min.js"></script>
     <script type="text/javascript" src="vendor/angular/angular-route.js"></script>
     
     <!-- Firebase -->
     <script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js"></script>
-    <script src="https://cdn.firebase.com/libs/angularfire/2.3.0/angularfire.min.js"></script>
-    <!-- MomentJS -->
-    <script type="text/javascript" src="vendor/momentjs/moment.js"></script>
+    <script src="https://cdn.firebase.com/libs/angularfire/2.3.0/angularfire.min.js"></script>    
     
     <!-- Scripts de configuração -->
     <script type="text/javascript" src="js/app.js"></script>
-    <script type="text/javascript" src="js/app.controllers.js"></script>
-    <script type="text/javascript" src="js/app.directives.js"></script>
-    <script type="text/javascript" src="js/app.routes.js"></script>
+    <script type="text/javascript" src="js/app.controllers.js"></script>        
     <script type="text/javascript" src="vendor/firebase/firebase.js"></script>
-    
-    <base href="/">
 
-</head>
+  </head>
 
-<body class="fixed-nav sticky-footer bg-dark" id="page-top" ng-controller="plantoesCtrl">
-    
-    <!-- Dashboard fixo -->
-    <dashboard></dashboard>
-    <!-- /Dashboard fixo -->
-    
-    <!-- Conteúdo -->
-    <div class="content-wrapper">
-        <!-- Views do AngularJS -->
-        <ng-view></ng-view>
-        <!-- Views do AngularJS -->
-        
-        <!-- Logout Modal -->
-        <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="logoutModalLabel" aria-hidden="true">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Deseja realmente sair?</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                        Clique em "Sair" abaixo se você deseja terminar essa sessão.
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
-                        <a class="btn btn-primary" href="login.html" ng-click="authObj.$signOut()">Sair</a>
-                    </div>
-                </div>
-            </div>
+  <body class="bg-dark" ng-controller="loginCtrl">
+
+    <div class="container">
+
+      <div class="card card-login mx-auto mt-5">
+        <div class="card-header">
+          Login - Gerenciador de plantões
         </div>
-        <!-- Logout Modal -->
-    </div>        
-    <!-- Conteúdo -->
-    <!-- Rodapé -->
-    <footer class="sticky-footer">
-        <div class="container">
-            <div class="text-center">
-                <small>Copyright &copy; APISI-II - 2017</small>
+        <div class="card-body">
+          <form>
+            <div class="form-group">
+              <label for="InputEmail">Email</label>
+              <input type="email" class="form-control" id="InputEmail" aria-describedby="emailHelp" placeholder="Seu email" ng-model="user.login">
             </div>
+            <div class="form-group">
+              <label for="InputPassword">Senha</label>
+              <input type="password" class="form-control" id="InputPassword" placeholder="Sua senha" ng-model="user.senha">
+            </div>            
+            <button class="btn btn-primary btn-block" href="" ng-click="login(user.login, user.senha)" ng-disabled="!user.login || !user.senha">Login</button>
+          </form>
+          <div class="text-center">            
+            <a class="d-block small" href="">Esqueceu a senha?</a>
+          </div>
         </div>
-    </footer>
-    <!-- Rodapé -->
-    
-    <!-- Scroll to Top Button -->
-    <a class="scroll-to-top rounded" href="#page-top">
-        <i class="fa fa-angle-up"></i>
-    </a>
-        
+      </div>
+    </div>
 
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/popper/popper.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>    
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
 
-</body>
+  </body>
 
 </html>

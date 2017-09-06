@@ -5,11 +5,18 @@ app.controller("calendarCtrl", function ($scope) {
 app.controller("loginCtrl", function($scope, $firebaseAuth){
     $scope.authObj = $firebaseAuth();
     
+    $scope.authObj.$onAuthStateChanged(function(firebaseUser) {
+        if (firebaseUser) {
+            location.assign('dashboard.html');
+        }
+    });
+    
+    
     $scope.login = function(login, senha){
         $scope.authObj.$signInWithEmailAndPassword(login, senha).then(
             function(firebaseUser){
                 console.log("Signed in as:", firebaseUser.uid);
-                location.assign("index.html");
+                location.assign("dashboard.html");
             }
         ).catch(function(error){
             var errorCode = error.code;
@@ -32,7 +39,7 @@ app.controller("plantoesCtrl", function ($scope, $firebaseArray, $filter, $fireb
     
     $scope.authObj.$onAuthStateChanged(function(firebaseUser) {
         if (!firebaseUser) {
-            location.assign('login.html');
+            location.assign('index.html');
         }
     });
     
