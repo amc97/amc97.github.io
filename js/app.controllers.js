@@ -2,10 +2,43 @@ app.controller("calendarCtrl", function ($scope) {
     $scope.day = moment();
 });
 
-app.controller("plantoesCtrl", function ($scope, $firebaseObject, $firebaseArray, $filter) {
+app.controller("loginCtrl", function($scope, $firebaseAuth){
+    $scope.authObj = $firebaseAuth();
+    
+    $scope.login = function(login, senha){
+        $scope.authObj.$signInWithEmailAndPassword(login, senha).then(
+            function(firebaseUser){
+                console.log("Signed in as:", firebaseUser.uid);
+                location.assign("index.html");
+            }
+        ).catch(function(error){
+            var errorCode = error.code;
+            var errorMessage = error.message;
+
+            if (errorCode == 'auth/invalid-email') {
+                alert('Email invalido.');
+            } else if (errorCode == 'auth/user-not-found') {
+                alert('Usuário não encontrado');
+            } else if (errorCode == 'auth/wrong-password') {
+                alert('Senha incorreta');
+            }
+            console.log('erro de auth: ', error);
+        });
+    }    
+});
+
+app.controller("plantoesCtrl", function ($scope, $firebaseArray, $filter, $firebaseAuth) {
+    $scope.authObj = $firebaseAuth();
+    
+    $scope.authObj.$onAuthStateChanged(function(firebaseUser) {
+        if (!firebaseUser) {
+            location.assign('login.html');
+        }
+    });
+    
     var refFuncionarios = firebase.database().ref().child("bd/funcionarios");
     var refMedicos = firebase.database().ref().child("bd/medicos");
-    var refPlantoes = firebase.database().ref().child("bd/plantoes");
+    var refPlantoes = firebase.database().ref().child("bd/plantoes");    
     
     $scope.plantoes = $firebaseArray(refPlantoes);
     
