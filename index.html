@@ -1,72 +1,314 @@
 <!DOCTYPE html>
-<html lang="pt" ng-app="appPlantao">
+<html lang="en">
 
-  <head>
+<head>
 
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
 
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <title>Gerenciador de Plantões - Login</title>
+    <title>Jessica Ferreira</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
 
-    <!-- Custom fonts for this template -->
-    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <!-- Material Design Bootstrap -->
+    <link href="css/mdb.css" rel="stylesheet">
 
-    <!-- Custom styles for this template -->
-    <link href="css/sb-admin.css" rel="stylesheet">
-      
-    <!-- AngularJS -->
-    <script type="text/javascript" src="vendor/angular/angular.min.js"></script>
-    <script type="text/javascript" src="vendor/angular/angular-route.js"></script>
-    
-    <!-- Firebase -->
-    <script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js"></script>
-    <script src="https://cdn.firebase.com/libs/angularfire/2.3.0/angularfire.min.js"></script>    
-    
-    <!-- Scripts de configuração -->
-    <script type="text/javascript" src="js/app.js"></script>
-    <script type="text/javascript" src="js/app.controllers.js"></script>        
-    <script type="text/javascript" src="vendor/firebase/firebase.js"></script>
+    <link href="css/style.css" rel="stylesheet">
 
-  </head>
+</head>
 
-  <body class="bg-dark" ng-controller="loginCtrl">
+<body>
 
-    <div class="container">
+    <header>
 
-      <div class="card card-login mx-auto mt-5">
-        <div class="card-header">
-          Login - Gerenciador de plantões
-        </div>
-        <div class="card-body">
-          <form>
-            <div class="form-group">
-              <label for="InputEmail">Email</label>
-              <input type="email" class="form-control" id="InputEmail" aria-describedby="emailHelp" placeholder="Seu email" ng-model="user.login">
+        <!--Navbar-->
+        <nav class="navbar navbar-expand-lg navbar-dark elegant-color-dark fixed-top">
+            <div class="container">
+                <a class="navbar-brand pink-text" href="#">JF</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon pink-text"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link pink-text" href="#">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item btn-group">
+                            <a class="nav-link dropdown-toggle pink-text" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Produtos 
+                            </a>
+                            <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
+                                <a class="dropdown-item" href="#">Cuidados com a pele</a>
+                                <a class="dropdown-item" href="#">Maquiagem</a>
+                                <a class="dropdown-item" href="#">Corpo & Sol</a>
+                                <a class="dropdown-item" href="#">Homens</a>
+                                <a class="dropdown-item" href="#">Fragrâncias</a>
+                                <a class="dropdown-item" href="#">Presentes</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link pink-text" href="#">Contato</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <div class="form-group">
-              <label for="InputPassword">Senha</label>
-              <input type="password" class="form-control" id="InputPassword" placeholder="Sua senha" ng-model="user.senha">
-            </div>            
-            <button class="btn btn-primary btn-block" href="" ng-click="login(user.login, user.senha)" ng-disabled="!user.login || !user.senha">Login</button>
-          </form>
-          <div class="text-center">            
-            <a class="d-block small" href="">Esqueceu a senha?</a>
-          </div>
+        </nav>
+        <!--/.Navbar-->
+
+    </header>
+
+    <main>
+
+        <!--Main layout-->
+        <div class="container">
+            <div class="row justify-content-center">
+                <!--Main column-->
+                <div class="col-lg-12">
+                    <!--First row-->
+                    <br>
+                    <div class="row wow fadeIn" data-wow-delay="0.4s">
+                        <div class="col-lg-12">
+                            <div class="divider-new">
+                                <h2 class="h2-responsive">Novidades</h2>
+                            </div>
+                            <!--Carousel Wrapper-->
+                            <div id="carousel-example-2" class="carousel slide carousel-fade" data-ride="carousel">
+                                <!--Indicators-->
+                                <ol class="carousel-indicators">
+                                    <li data-target="#carousel-example-2" data-slide-to="0" class="active"></li>
+                                    <li data-target="#carousel-example-2" data-slide-to="1"></li>
+                                    <li data-target="#carousel-example-2" data-slide-to="2"></li>
+                                    <li data-target="#carousel-example-2" data-slide-to="3"></li>
+                                </ol>
+                                <!--/.Indicators-->
+                                <!--Slides-->
+                                <div class="carousel-inner" role="listbox">
+                                    <div class="carousel-item active">
+                                        <div class="view hm-black-slight">
+                                            <img class="d-block w-100" src="img/1.PNG" alt="First slide">                                        
+                                            <div class="mask"></div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <!--Mask color-->
+                                        <div class="view hm-black-slight">
+                                            <img class="d-block w-100" src="img/2.PNG" alt="Second slide">
+                                            <div class="mask"></div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <!--Mask color-->
+                                        <div class="view hm-black-slight">
+                                            <img class="d-block w-100" src="img/3.PNG" alt="Third slide">
+                                            <div class="mask"></div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <!--Mask color-->
+                                        <div class="view hm-black-slight">
+                                            <img class="d-block w-100" src="img/4.PNG" alt="Fourty slide">
+                                            <div class="mask"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--/.Slides-->
+                                <!--Controls-->
+                                <a class="carousel-control-prev" href="#carousel-example-2" role="button" data-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Previous</span>
+                                </a>
+                                <a class="carousel-control-next" href="#carousel-example-2" role="button" data-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Next</span>
+                                </a>
+                                <!--/.Controls-->
+                            </div>
+                            <!--/.Carousel Wrapper-->
+                        </div>
+                    </div>
+                    <!--/.First row-->
+                    <br>
+                    <div class="divider-new">
+                        <h2 class="h2-responsive">Produtos</h2>
+                    </div>
+                    <div class="row d-flex">
+                        <div class="col-xl-3 col-lg-3 mb-3">
+                            <div class="card">
+                                <div class="card-body">
+                                    <!--Title-->
+                                    <h4 class="card-title">Pele</h4>
+                                    <!--Text-->
+                                    <p class="card-text">Tudo para ter uma pele jovem e radiante.
+                                    </p>
+                                    <a href="#" class="btn btn-elegant"><span class="pink-text">Ver todos</span></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-3 mb-3">
+                            <div class="card">
+                                <div class="card-body">
+                                    <!--Title-->
+                                    <h4 class="card-title">Maquiagem</h4>
+                                    <!--Text-->
+                                    <p class="card-text">As cores certas para combinar com seu estilo.
+                                    </p>
+                                    <a href="#" class="btn btn-elegant"><span class="pink-text">Ver todos</span></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-3 mb-3">
+                            <div class="card">
+                                <div class="card-body">
+                                    <!--Title-->
+                                    <h4 class="card-title">Corpo & Sol</h4>
+                                    <!--Text-->
+                                    <p class="card-text">Produtos para proteger e revitalizar seu corpo.
+                                    </p>
+                                    <a href="#" class="btn btn-elegant"><span class="pink-text">Ver todos</span></a>
+                                </div>
+                            </div>
+                        </div>                    
+                        <div class="col-xl-3 col-lg-3 mb-3">
+                            <div class="card">
+                                <div class="card-body">
+                                    <!--Title-->
+                                    <h4 class="card-title">Homens</h4>
+                                    <!--Text-->
+                                    <p class="card-text">Produtos para as necessidades masculinas.
+                                    </p>
+                                    <a href="#" class="btn btn-elegant"><span class="pink-text">Ver todos</span></a>
+                                </div>
+                            </div>
+                        </div>                        
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="divider-new">
+                                <h2 class="h2-responsive">Produtos mais vendidos</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Second row-->
+                    <div class="row">
+                        <!--First columnn-->
+                        <div class="col-lx-4 col-lg-4 mb-4">
+                            <!--Card-->
+                            <div class="card wow fadeIn" data-wow-delay="0.2s">
+
+                                <!--Card image-->
+                                <img class="img-fluid" src="img/mary-kay-03.jpg" alt="Card image cap">
+
+                                <!--Card content-->
+                                <div class="card-body">
+                                    <!--Title-->
+                                    <h4 class="card-title">Base Timewise Matte <span class="badge badge-pill red lighten-4">64 R$</span></h4>
+                                    <!--Text-->
+                                    <p class="card-text">É a base anti-idade perfeita para peles mistas a oleosas, pois proporciona uma redução visível na aparência de poros, linhas finas, rugas e imperfeições na pele.
+                                    </p>
+                                    <a href="#" class="btn btn-elegant"><span class="pink-text"><strong>Ver produto</strong></span></a>                          
+                                </div>
+
+                            </div>
+                            <!--/.Card-->
+                        </div>
+                        <!--First columnn-->
+
+                        <!--Second columnn-->
+                        <div class="col-lx-4 col-lg-4 mb-4">
+                            <!--Card-->
+                            <div class="card wow fadeIn" data-wow-delay="0.4s">
+
+                                <!--Card image-->
+                                <img class="img-fluid" src="img/mary-kay-07.jpg" alt="Card image cap">
+
+                                <!--Card content-->
+                                <div class="card-body">
+                                    <!--Title-->
+                                    <h4 class="card-title">Kit microdermoabrasão TimeWise <span class="badge badge-pill red lighten-4">198 R$</span></h4>
+                                    <!--Text-->
+                                    <p class="card-text">Este kit proporciona resultados imediatos no combate às linhas finas de expressão, reduzindo a aparência dos poros e deixando a pele mais lisa e suave.
+                                    </p>
+                                    <a href="#" class="btn btn-elegant"><span class="pink-text"><strong>Ver produto</strong></span></a>
+                                </div>
+
+                            </div>
+                            <!--/.Card-->
+                        </div>
+                        <!--Second columnn-->
+
+                        <!--Third columnn-->
+                        <div class="col-lx-4 col-lg-4 mb-4">
+                            <!--Card-->
+                            <div class="card wow fadeIn" data-wow-delay="0.6s">
+
+                                <!--Card image-->
+                                <img class="img-fluid" src="img/mary-kay-08.jpg" alt="Card image cap">
+
+                                <!--Card content-->
+                                <div class="card-body">
+                                    <!--Title-->
+                                    <h4 class="card-title">Kit sistema anti-idade TimeWise <span class="badge badge-pill red lighten-4">364 R$</span></h4>
+                                    <!--Text-->
+                                    <p class="card-text">O Sistema Anti-idade de Cuidados com a Pele TimeWise® oferece 11 benefícios contra o envelhecimento e resultados comprovados em redução da aparência de linhas finas, aumento da elasticidade e melhor uniformidade da pele.
+                                    </p>
+                                    <a href="#" class="btn btn-elegant"><span class="pink-text"><strong>Ver produto</strong></span></a>
+                                </div>
+
+                            </div>
+                            <!--/.Card-->
+
+                        </div>
+                        <!--Third columnn-->
+                    </div>
+                    <!--/.Second row-->
+
+                </div>
+                <!--/.Main column-->
+
+            </div>
         </div>
-      </div>
-    </div>
+        <!--/.Main layout-->
+
+    </main>
+
+    <!--Footer-->
+    <footer class="page-footer center-on-small-only">
+
+        <!--Copyright-->
+        <div class="footer-copyright">
+            <div class="container-fluid">
+                © 2017 Copyright: <a href="#"> AMC WEB Design </a>
+            </div>
+        </div>
+        <!--/.Copyright-->
+
+    </footer>
+    <!--/.Footer-->
+
+
+    <!-- SCRIPTS -->
+
+    <!-- JQuery -->
+    <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+
+    <!-- Bootstrap dropdown -->
+    <script type="text/javascript" src="js/popper.min.js"></script>
 
     <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/popper/popper.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
 
-  </body>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+
+    <script>
+        new WOW().init();
+    </script>
+
+</body>
 
 </html>
