@@ -2,313 +2,407 @@
 <html lang="en">
 
 <head>
-
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-
-    <title>Jessica Ferreira</title>
-
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-
-    <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap.css" rel="stylesheet">
-
-    <!-- Material Design Bootstrap -->
-    <link href="css/mdb.css" rel="stylesheet">
-
-    <link href="css/style.css" rel="stylesheet">
-
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<title>XXIII Maratona de Programação</title>
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<!-- Bootstrap core CSS -->
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<!-- Material Design Bootstrap -->
+	<link href="css/mdb.min.css" rel="stylesheet">
+	<!-- Your custom styles (optional) -->
+	<link href="css/style.min.css" rel="stylesheet">
+	<style type="text/css">
+		@media (min-width: 800px) and (max-width: 850px) {
+			.navbar:not(.top-nav-collapse) {
+				background: #1C2331 !important;
+			}
+		}
+	</style>
 </head>
 
 <body>
 
-    <header>
+	<!-- Navbar -->
+	<nav class="navbar fixed-top navbar-expand-lg navbar-dark special-color-dark scrolling-navbar">
+		<div class="container">
 
-        <!--Navbar-->
-        <nav class="navbar navbar-expand-lg navbar-dark elegant-color-dark fixed-top">
-            <div class="container">
-                <a class="navbar-brand pink-text" href="#">JF</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon pink-text"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav mr-auto">
-                        <li class="nav-item active">
-                            <a class="nav-link pink-text" href="#">Home <span class="sr-only">(current)</span></a>
-                        </li>
-                        <li class="nav-item btn-group">
-                            <a class="nav-link dropdown-toggle pink-text" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Produtos 
-                            </a>
-                            <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
-                                <a class="dropdown-item" href="#">Cuidados com a pele</a>
-                                <a class="dropdown-item" href="#">Maquiagem</a>
-                                <a class="dropdown-item" href="#">Corpo & Sol</a>
-                                <a class="dropdown-item" href="#">Homens</a>
-                                <a class="dropdown-item" href="#">Fragrâncias</a>
-                                <a class="dropdown-item" href="#">Presentes</a>
-                            </div>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link pink-text" href="#">Contato</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-        <!--/.Navbar-->
+			<!-- Brand -->
+			<a class="navbar-brand" href="/" target="_blank">
+				<img src="https://lh4.googleusercontent.com/XMS_kdgujqP7tnLctsPN4isqLjc9cZyNF63UOetRGWp-yqtok0n8YsQxik2CLYBA7UjurgbSs2jCsb-ub6mO=w1366-h637" alt="" style="height: 20px;">
+				FAP
+			</a>
 
-    </header>
+			<!-- Collapse -->
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+			    aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
 
-    <main>
+			<!-- Links -->
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
 
-        <!--Main layout-->
-        <div class="container">
-            <div class="row justify-content-center">
-                <!--Main column-->
-                <div class="col-lg-12">
-                    <!--First row-->
-                    <br>
-                    <div class="row wow fadeIn" data-wow-delay="0.4s">
-                        <div class="col-lg-12">
-                            <div class="divider-new">
-                                <h2 class="h2-responsive">Novidades</h2>
-                            </div>
-                            <!--Carousel Wrapper-->
-                            <div id="carousel-example-2" class="carousel slide carousel-fade" data-ride="carousel">
-                                <!--Indicators-->
-                                <ol class="carousel-indicators">
-                                    <li data-target="#carousel-example-2" data-slide-to="0" class="active"></li>
-                                    <li data-target="#carousel-example-2" data-slide-to="1"></li>
-                                    <li data-target="#carousel-example-2" data-slide-to="2"></li>
-                                    <li data-target="#carousel-example-2" data-slide-to="3"></li>
-                                </ol>
-                                <!--/.Indicators-->
-                                <!--Slides-->
-                                <div class="carousel-inner" role="listbox">
-                                    <div class="carousel-item active">
-                                        <div class="view hm-black-slight">
-                                            <img class="d-block w-100" src="img/1.PNG" alt="First slide">                                        
-                                            <div class="mask"></div>
-                                        </div>
-                                    </div>
-                                    <div class="carousel-item">
-                                        <!--Mask color-->
-                                        <div class="view hm-black-slight">
-                                            <img class="d-block w-100" src="img/2.PNG" alt="Second slide">
-                                            <div class="mask"></div>
-                                        </div>
-                                    </div>
-                                    <div class="carousel-item">
-                                        <!--Mask color-->
-                                        <div class="view hm-black-slight">
-                                            <img class="d-block w-100" src="img/3.PNG" alt="Third slide">
-                                            <div class="mask"></div>
-                                        </div>
-                                    </div>
-                                    <div class="carousel-item">
-                                        <!--Mask color-->
-                                        <div class="view hm-black-slight">
-                                            <img class="d-block w-100" src="img/4.PNG" alt="Fourty slide">
-                                            <div class="mask"></div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!--/.Slides-->
-                                <!--Controls-->
-                                <a class="carousel-control-prev" href="#carousel-example-2" role="button" data-slide="prev">
-                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                    <span class="sr-only">Previous</span>
-                                </a>
-                                <a class="carousel-control-next" href="#carousel-example-2" role="button" data-slide="next">
-                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                    <span class="sr-only">Next</span>
-                                </a>
-                                <!--/.Controls-->
-                            </div>
-                            <!--/.Carousel Wrapper-->
-                        </div>
-                    </div>
-                    <!--/.First row-->
-                    <br>
-                    <div class="divider-new">
-                        <h2 class="h2-responsive">Produtos</h2>
-                    </div>
-                    <div class="row d-flex">
-                        <div class="col-xl-3 col-lg-3 mb-3">
-                            <div class="card">
-                                <div class="card-body">
-                                    <!--Title-->
-                                    <h4 class="card-title">Pele</h4>
-                                    <!--Text-->
-                                    <p class="card-text">Tudo para ter uma pele jovem e radiante.
-                                    </p>
-                                    <a href="#" class="btn btn-elegant"><span class="pink-text">Ver todos</span></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xl-3 col-lg-3 mb-3">
-                            <div class="card">
-                                <div class="card-body">
-                                    <!--Title-->
-                                    <h4 class="card-title">Maquiagem</h4>
-                                    <!--Text-->
-                                    <p class="card-text">As cores certas para combinar com seu estilo.
-                                    </p>
-                                    <a href="#" class="btn btn-elegant"><span class="pink-text">Ver todos</span></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xl-3 col-lg-3 mb-3">
-                            <div class="card">
-                                <div class="card-body">
-                                    <!--Title-->
-                                    <h4 class="card-title">Corpo & Sol</h4>
-                                    <!--Text-->
-                                    <p class="card-text">Produtos para proteger e revitalizar seu corpo.
-                                    </p>
-                                    <a href="#" class="btn btn-elegant"><span class="pink-text">Ver todos</span></a>
-                                </div>
-                            </div>
-                        </div>                    
-                        <div class="col-xl-3 col-lg-3 mb-3">
-                            <div class="card">
-                                <div class="card-body">
-                                    <!--Title-->
-                                    <h4 class="card-title">Homens</h4>
-                                    <!--Text-->
-                                    <p class="card-text">Produtos para as necessidades masculinas.
-                                    </p>
-                                    <a href="#" class="btn btn-elegant"><span class="pink-text">Ver todos</span></a>
-                                </div>
-                            </div>
-                        </div>                        
-                    </div>
-                    <br>
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <div class="divider-new">
-                                <h2 class="h2-responsive">Produtos mais vendidos</h2>
-                            </div>
-                        </div>
-                    </div>
-                    <!--Second row-->
-                    <div class="row">
-                        <!--First columnn-->
-                        <div class="col-lx-4 col-lg-4 mb-4">
-                            <!--Card-->
-                            <div class="card wow fadeIn" data-wow-delay="0.2s">
+				<!-- Left -->
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item">
+						<a class="nav-link" href="#">Home</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#sobre">Sobre</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#programacao">Programação e Local</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#ambiente">Ambiente</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#contato">Contato</a>
+					</li>
+				</ul>				
 
-                                <!--Card image-->
-                                <img class="img-fluid" src="img/mary-kay-03.jpg" alt="Card image cap">
+			</div>
 
-                                <!--Card content-->
-                                <div class="card-body">
-                                    <!--Title-->
-                                    <h4 class="card-title">Base Timewise Matte <span class="badge badge-pill red lighten-4">64 R$</span></h4>
-                                    <!--Text-->
-                                    <p class="card-text">É a base anti-idade perfeita para peles mistas a oleosas, pois proporciona uma redução visível na aparência de poros, linhas finas, rugas e imperfeições na pele.
-                                    </p>
-                                    <a href="#" class="btn btn-elegant"><span class="pink-text"><strong>Ver produto</strong></span></a>                          
-                                </div>
+		</div>
+	</nav>
+	<!-- Navbar -->
 
-                            </div>
-                            <!--/.Card-->
-                        </div>
-                        <!--First columnn-->
+	<!-- Full Page Intro -->
+	<div class="view" style="background-image: url('https://lh5.googleusercontent.com/2y-6VeJSLHNr89fboNALGeayxtF_xtghHnJVJgpamxPgeN5GvTpS-jtf18UZM0zO74CfUzdw0EwS_BuNvY0U=w1366-h637'); background-repeat: no-repeat; background-size: cover;">
 
-                        <!--Second columnn-->
-                        <div class="col-lx-4 col-lg-4 mb-4">
-                            <!--Card-->
-                            <div class="card wow fadeIn" data-wow-delay="0.4s">
+		<!-- Mask & flexbox options-->
+		<div class="mask rgba-black-strong pattern-6 d-flex justify-content-center align-items-center">
 
-                                <!--Card image-->
-                                <img class="img-fluid" src="img/mary-kay-07.jpg" alt="Card image cap">
+			<!-- Content -->
+			<div class="text-center white-text mx-5 wow fadeIn">
+				<img class="mx-auto mb-2 img-fluid" src="https://lh6.googleusercontent.com/Q9mNQ37yAxDTekOK6H41C2wrT2oK_MKD8_HuUihazK0e9RWjTCHBo4EEDS6Gp26OEeS2gAT1c5ND4_tYmg3X=w1366-h588"
+				    style="height: 15vmax;">
+				<h1 class="h1 h1-responsive">
+					<strong>XXIII Maratona de Programação SBC</strong>
+				</h1>
 
-                                <!--Card content-->
-                                <div class="card-body">
-                                    <!--Title-->
-                                    <h4 class="card-title">Kit microdermoabrasão TimeWise <span class="badge badge-pill red lighten-4">198 R$</span></h4>
-                                    <!--Text-->
-                                    <p class="card-text">Este kit proporciona resultados imediatos no combate às linhas finas de expressão, reduzindo a aparência dos poros e deixando a pele mais lisa e suave.
-                                    </p>
-                                    <a href="#" class="btn btn-elegant"><span class="pink-text"><strong>Ver produto</strong></span></a>
-                                </div>
+				<h3 class="h3 h3-responsive">Primeira Fase: 15 de setembro de 2018 </h3>
 
-                            </div>
-                            <!--/.Card-->
-                        </div>
-                        <!--Second columnn-->
+				<p class="mb-4 d-none d-md-block">
+					A Maratona de Programação é um evento da Sociedade Brasileira de Computação que existe desde o ano de 1996. A Maratona nasceu
+					das competições regionais classificatórias para as finais mundiais do concurso de programação da ACM, o ACM International
+					Collegiate Programming Contest, e é parte da regional sulamericana do concurso. Neste ano ocorre a 23a. edição da Maratona.
+				</p>
+			</div>
+			<!-- Content -->
 
-                        <!--Third columnn-->
-                        <div class="col-lx-4 col-lg-4 mb-4">
-                            <!--Card-->
-                            <div class="card wow fadeIn" data-wow-delay="0.6s">
+		</div>
+		<!-- Mask & flexbox options-->
+	</div>
+	<!-- Full Page Intro -->
+	<div id="sobre">
+		<br>
+	</div>
+	<!--Main layout-->
+	<main>
+		<div class="container">
+			<section class="mt-5 wow fadeIn">
+				<div class="row justify-content-center">
+					<h3 class="text h3 h3-responsive">Sobre</h3>
+				</div>
+				<div class="row justify-content-center mb-5">
+					<div class="col-lg-6">
+						<div class="card">
+							<img class="card-img-top" src="https://www.fapce.edu.br/imagens/img-estrutura-fisica-06.jpg" alt="Card image cap">
+						</div>
+					</div>
+				</div>
+				<!--Grid row-->
+				<div class="row justify-content-center">
+					<!--Grid column-->
+					<div class="col-md-6 mb-4">
+						<div class="card">
+							<!-- Main heading -->
+							<div class="card-header special-color-dark white-text">
+								<h4 class="h4 h4-responsive">Maratona</h4>
+							</div>
+							<div class="card-body">
+								<p>
+									A Maratona de Programação é um evento da Sociedade Brasileira de Computação que existe desde o ano de 1996. A Maratona nasceu
+									das competições regionais classificatórias para as finais mundiais do concurso de programação da ACM, o ACM International
+									Collegiate Programming Contest, e é parte da regional sulamericana do concurso. Neste ano ocorre a 23a. edição da
+									Maratona. Ela se destina a alunos e alunas de cursos de graduação e início de pós-graduação na área de Computação
+									e afins. A competição promove nos estudantes a criatividade, a capacidade de trabalho em equipe, a busca de novas
+									soluções de software e a habilidade de resolver problemas sob pressão.
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6 mb-4">
+						<div class="card">
+							<div class="card-header special-color-dark white-text">
+								<h4 class="h4 h4-responsive">Instituição sede</h4>
+							</div>
+							<div class="card-body">
+								<p>
+									A FACULDADE PARAÍSO, propõe-se ser um centro irradiador de experiências educacionais e de práticas inovadoras, contribuindo
+									para diminuir as naturais carências sócio-econômico-culturais do meio de atuação e que se traduzem em baixos indicadores
+									sociais de qualidade de vida.
+								</p>
+								<p></p>
+								<p>
+									Como IES inserida no contexto nordestino, espera contribuir para a defesa da cidadania e para o desenvolvimento e progresso
+									integral e auto-sustentável de sua área geo-educacional.
+								</p>
+							</div>
+						</div>
+					</div>
+					<!--Grid column-->
+				</div>
+				<!--Grid row-->
+				<div id="programacao"></div>
+			</section>
 
-                                <!--Card image-->
-                                <img class="img-fluid" src="img/mary-kay-08.jpg" alt="Card image cap">
+			<hr class="my-5">
+			<!--Section: Main features & Quick Start-->
+			<section>
+				<!--Grid row-->
+				<div class="row wow fadeIn">
 
-                                <!--Card content-->
-                                <div class="card-body">
-                                    <!--Title-->
-                                    <h4 class="card-title">Kit sistema anti-idade TimeWise <span class="badge badge-pill red lighten-4">364 R$</span></h4>
-                                    <!--Text-->
-                                    <p class="card-text">O Sistema Anti-idade de Cuidados com a Pele TimeWise® oferece 11 benefícios contra o envelhecimento e resultados comprovados em redução da aparência de linhas finas, aumento da elasticidade e melhor uniformidade da pele.
-                                    </p>
-                                    <a href="#" class="btn btn-elegant"><span class="pink-text"><strong>Ver produto</strong></span></a>
-                                </div>
+					<!--Grid column-->
+					<div class="col-lg-6 mb-3">
+						<div class="card">
 
-                            </div>
-                            <!--/.Card-->
+							<div class="card-header white-text special-color-dark">
+								<h4 class="h4 h4-responsive">
+									Programação
+								</h4>
+							</div>
+							<div class="card-body">
+								<!--First row-->
+								<div class="row">
+									<div class="col-1 mr-3">
+										<i class="fa fa-clock-o fa-lg"></i>
+									</div>
+									<div class="col-10">
+										<h5 class="feature-title">09:00</h5>
+										<p class="black-text">Chegada dos times e entrega do material;</p>
+									</div>
+								</div>
+								<!--/First row-->
 
-                        </div>
-                        <!--Third columnn-->
-                    </div>
-                    <!--/.Second row-->
+								<!--Second row-->
+								<div class="row">
+									<div class="col-1 mr-3">
+										<i class="fa fa-clock-o fa-lg"></i>
+									</div>
+									<div class="col-10">
+										<h5 class="feature-title">10:00</h5>
+										<p class="black-text">Sessão de Aquecimento (uma hora);</p>
+									</div>
+								</div>
+								<!--/Second row-->
 
-                </div>
-                <!--/.Main column-->
+								<!--Third row-->
+								<div class="row">
+									<div class="col-1 mr-3">
+										<i class="fa fa-clock-o fa-lg"></i>
+									</div>
+									<div class="col-10">
+										<h5 class="feature-title">12:00</h5>
+										<p class="black-text">Almoço;</p>
+									</div>
+								</div>
+								<!--/Third row-->
 
-            </div>
-        </div>
-        <!--/.Main layout-->
+								<div class="row">
+									<div class="col-1 mr-3">
+										<i class="fa fa-clock-o fa-lg"></i>
+									</div>
+									<div class="col-10">
+										<h5 class="feature-title">14:00</h5>
+										<p class="black-text">Competição (cinco horas);</p>
+									</div>
+								</div>
 
-    </main>
+								<div class="row">
+									<div class="col-1 mr-3">
+										<i class="fa fa-clock-o fa-lg"></i>
+									</div>
+									<div class="col-10">
+										<h5 class="feature-title">19:00</h5>
+										<p class="black-text">Encerramento, divulgação dos resultados e premiações.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--/Grid column-->
 
-    <!--Footer-->
-    <footer class="page-footer center-on-small-only">
+					<!--Grid column-->
+					<div class="col-lg-6">
+						<div class="card">
+							<div class="card-header special-color-dark white-text">
+								<h4 class="h4 h4-responsive">
+									<span class="fa fa-map-marker fa-lg"></span>
+									Localização
+								</h4>
+							</div>
+							<div class="">
+								<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3958.30478523628!2d-39.31324678575229!3d-7.20602729479765!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7a178ad71080c59%3A0x5b2a22386c2711fd!2sFaculdade+Para%C3%ADso+do+Cear%C3%A1+-+FAP!5e0!3m2!1spt-BR!2sbr!4v1527103435652"
+								    frameborder="0" style="border:0" allowfullscreen width="100%" height="325"></iframe>
+							</div>
+						</div>
 
-        <!--Copyright-->
-        <div class="footer-copyright">
-            <div class="container-fluid">
-                © 2017 Copyright: <a href="#"> AMC WEB Design </a>
-            </div>
-        </div>
-        <!--/.Copyright-->
+					</div>
+					<!--/Grid column-->
 
-    </footer>
-    <!--/.Footer-->
+				</div>
+				<!--/Grid row-->
+				<div id="ambiente"></div>
+			</section>
+			<!--Section: Main features & Quick Start-->
 
+			<hr class="my-5">
 
-    <!-- SCRIPTS -->
+			<section class="mt-5 wow fadeIn">
+				<!--Grid row-->
+				<div class="row justify-content-center">
+					<!--Grid column-->
+					<div class="col-md-10 mb-4">
 
-    <!-- JQuery -->
-    <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+						<!-- Main heading -->
+						<h3 class="h3 mb-3 text-center">Ambiente</h3>
 
-    <!-- Bootstrap dropdown -->
-    <script type="text/javascript" src="js/popper.min.js"></script>
+						<p>
+							A Faculdade Paraíso possui quatro Laboratórios de Informática modernos, equipados com computadores de última geração e monitores
+							de LCD que atendem às necessidades da comunidade acadêmica, alinhando espaço e conforto.
+						</p>
+						<div class="card">
+							<img class="card-img-top" src="https://www.fapce.edu.br/imagens/img-laboratorios-01.jpg" alt="Card image cap">
+						</div>
+						<p class="mt-3">
+							Os laboratórios possuem softwares específicos para as práticas de ensino nas mais diversas áreas do conhecimento.
+						</p>
+					</div>
+					<!--Grid column-->
+				</div>
+				<div id="contato"></div>
+			</section>
+			<hr class="my-5">
 
-    <!-- Bootstrap core JavaScript -->
-    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+			<section class="mt-5 wow fadeIn">
+				<div class="row justify-content-center mb-3">
+					<h3 class="h3 h3-responsive">Contato</h3>
+				</div>
+				<!--Grid row-->
+				<div class="row justify-content-center">
+					<!--Grid column-->
+					<div class="col-lg-6 mb-3">
+						<div class="card">
+							<div class="card-body">
+								<div class="text-center mb-5">
+									<img src="http://ajuda.fapce.com.br/assets/imagens/logo.png" alt="" class="img-fluid">
+								</div>
+								<div class="text-center mb-5">
+									<p class="card-text">
+										<span class="fa fa-globe fa-lg mr-2"></span>
+										<a href="https://www.fapce.edu.br" target="_blank">
+											www.fapce.edu.br
+										</a>
+									</p>
+									<p class="card-text">
+										<span class="fa fa-facebook fa-lg mr-2"></span>
+										<a href="https://www.facebook.com/faculdadeparaiso/" target="_blank">
+											Faculdade Paraíso
+										</a>
+									</p>
+									<p class="card-text">
+										<span class="fa fa-instagram fa-lg mr-2"></span>
+										<a href="https://www.instagram.com/faculdadeparaiso/" target="_blank">
+											Faculdade Paraíso
+										</a>
+									</p>
+								</div>
+								<div class="text-center mb-3">
+									<p class="card-text">
+										<span class="fa fa-map-marker fa-lg mr-2"></span>
+										Rua da Conceição, 1228 - S. Miguel Juazeiro do Norte.
+									</p>
+									<p class="card-text">
+										<span class="fa fa-phone fa-lg mr-2"></span>
+										(88) 3512-3299
+									</p>
+									<p class="card-text">
+										<span class="fa fa-envelope fa-lg mr-2"></span>
+										fap@fapce.edu.br
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-6">
+						<div class="card">
+							<div class="card-body">
+								<form action="">
+									<legend>Preencha o formulário</legend>
+									<div class="md-form">
+										<label for="nome">Nome</label>
+										<input type="text" name="nome" id="nome" class="form-control">
+									</div>
+									<div class="md-form">
+										<label for="email">Email</label>
+										<input type="email" name="email" id="email" class="form-control">
+									</div>
+									<div class="md-form">
+										<label for="assunto">Assunto</label>
+										<input type="text" name="assunto" id="assunto" class="form-control">
+									</div>
+									<div class="md-form">
+										<label for="mensagem">Mensagem</label>
+										<textarea name="mensagem" id="mensagem" rows="1" class="form-control md-textarea"></textarea>
+									</div>
+									<div class="text-center">
+										<a href="#" class="btn special-color-dark">Enviar</a>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+					<!--Grid column-->
+				</div>
+				<!--Grid row-->
+			</section>
+		</div>
+	</main>
+	<!--Main layout-->
 
-    <!-- MDB core JavaScript -->
-    <script type="text/javascript" src="js/mdb.min.js"></script>
+	<!--Footer-->
 
-    <script>
-        new WOW().init();
-    </script>
+	<!-- Footer -->
+	<footer class="page-footer font-small special-color-dark pt-4 mt-4">
+		<!-- Copyright -->
+		<div class="footer-copyright text-center py-3">© 2018 Copyright:
+			<a href="https://nexti.fapce.edu.br/"> NExTI</a>
+		</div>
+		<!-- Copyright -->
 
+	</footer>
+	<!-- Footer -->
+
+	<!--/.Footer-->
+
+	<!-- SCRIPTS -->
+	<!-- JQuery -->
+	<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+	<!-- Bootstrap tooltips -->
+	<script type="text/javascript" src="js/popper.min.js"></script>
+	<!-- Bootstrap core JavaScript -->
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<!-- MDB core JavaScript -->
+	<script type="text/javascript" src="js/mdb.min.js"></script>
+	<!-- Initializations -->
+	<script type="text/javascript">
+		// Animations initialization
+		new WOW().init();
+	</script>
 </body>
 
 </html>
